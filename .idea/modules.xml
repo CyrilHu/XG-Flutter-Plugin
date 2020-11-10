@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/example/build/xg_flutter_plugin/intermediates/aapt_friendly_merged_manifests/debug/aapt/aapt.iml" filepath="$PROJECT_DIR$/example/build/xg_flutter_plugin/intermediates/aapt_friendly_merged_manifests/debug/aapt/aapt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/build/xg_flutter_plugin/generated/source/buildConfig/buildConfig.iml" filepath="$PROJECT_DIR$/example/build/xg_flutter_plugin/generated/source/buildConfig/buildConfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/build/app/generated/source/buildConfig/buildConfig1.iml" filepath="$PROJECT_DIR$/example/build/app/generated/source/buildConfig/buildConfig1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/build/app/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/bundle-manifest.iml" filepath="$PROJECT_DIR$/example/build/app/intermediates/bundle_manifest/debug/processDebugManifest/bundle-manifest/bundle-manifest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/build/app/intermediates/instant_app_manifest/debug/debug.iml" filepath="$PROJECT_DIR$/example/build/app/intermediates/instant_app_manifest/debug/debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/build/app/intermediates/merged_manifests/debug/debug1.iml" filepath="$PROJECT_DIR$/example/build/app/intermediates/merged_manifests/debug/debug1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/build/xg_flutter_plugin/intermediates/library_manifest/debug/debug2.iml" filepath="$PROJECT_DIR$/example/build/xg_flutter_plugin/intermediates/library_manifest/debug/debug2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mFlutter.iml" filepath="$PROJECT_DIR$/mFlutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/src/main/main.iml" filepath="$PROJECT_DIR$/android/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/app/src/main/main1.iml" filepath="$PROJECT_DIR$/example/android/app/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/example/android/app/src/profile/profile.iml" filepath="$PROJECT_DIR$/example/android/app/src/profile/profile.iml" />
+    </modules>
+  </component>
+</project>
