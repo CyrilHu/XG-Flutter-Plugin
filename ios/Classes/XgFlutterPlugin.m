@@ -33,7 +33,7 @@
 - (void)handleMethodCall:(FlutterMethodCall*)call result:(FlutterResult)result {
   if ([@"xgSdkVersion" isEqualToString:call.method]) {
     result([[XGPush defaultManager] sdkVersion]);
-  } else if([@"xgToken" isEqualToString:call.method]) {
+  } else if([@"xgToken" isEqualToString:call.method] || [@"getXgToken" isEqualToString:call.method]) {
       result([[XGPushTokenManager defaultTokenManager] xgTokenString]);
   } else if([@"startXg" isEqualToString:call.method]) {
       [self startXg:call result:result];

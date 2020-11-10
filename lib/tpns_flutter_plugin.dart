@@ -95,7 +95,7 @@ class XgFlutterPlugin {
 
   /// 获取信鸽token
   static Future<String> get xgToken async {
-    final String xgToken = await _channel.invokeMethod('xgToken');
+    final String xgToken = await _channel.invokeMethod('getXgToken');
     return xgToken;
   }
 
