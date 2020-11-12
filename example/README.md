@@ -6,8 +6,8 @@
       dependencies:
         tpns_flutter_plugin:
           git:
-            url: https://git.code.tencent.com/tpns/XG-Flutter-Plugin.git
-            ref: V1.0.4
+            url: https://git.code.tencent.com/tpns/TPNS-Flutter-Plugin.git
+            ref: V1.0.5
 ```
 
 

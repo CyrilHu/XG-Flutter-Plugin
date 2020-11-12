@@ -164,7 +164,7 @@ class XgAndroidApi {
   /// 第一次注册会产生 Token，之后一直存在手机上，不管以后注销注册操作，该 Token 一直存在，
   /// 当 App 完全卸载重装了 Token 会发生变化。不同 App 之间的 Token 不一样。
   Future<String> getXgToken() async {
-    final String token = await _channel.invokeMethod('getXgToken');
+    final String token = await _channel.invokeMethod('xgToken');
     return token;
   }
 

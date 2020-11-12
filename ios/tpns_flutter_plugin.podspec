@@ -12,7 +12,7 @@ A new flutter plugin project.
   s.homepage         = 'https://cloud.tencent.com/product/tpns/'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Tencent' => 'rockzuo@tencent.com' }
-  s.source           = { :git => "http://git.code.tencent.com/tpns/XG-Flutter-Plugin.git", :branch => "V1.0.4" }
+  s.source           = { :git => "http://git.code.tencent.com/tpns/TPNS-Flutter-Plugin.git", :branch => "V1.0.5" }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
   s.dependency 'TPNS-iOS', '1.2.7.2'
