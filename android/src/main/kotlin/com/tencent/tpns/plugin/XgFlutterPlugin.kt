@@ -662,8 +662,10 @@ public class XgFlutterPlugin : FlutterPlugin, MethodCallHandler {
 
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-        val channel1 = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "tpns_flutter_plugin")
-        channel1.setMethodCallHandler(XgFlutterPlugin(flutterPluginBinding, channel1))
+        if (XgFlutterPlugin.instance == null) {
+            val channel1 = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "tpns_flutter_plugin")
+            channel1.setMethodCallHandler(XgFlutterPlugin(flutterPluginBinding, channel1))
+        }
     }
 
 
