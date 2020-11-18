@@ -662,7 +662,7 @@ public class XgFlutterPlugin : FlutterPlugin, MethodCallHandler {
 
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-        if (XgFlutterPlugin.instance == null) {
+        if (XgFlutterPlugin.channel == null) {
             val channel1 = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "tpns_flutter_plugin")
             channel1.setMethodCallHandler(XgFlutterPlugin(flutterPluginBinding, channel1))
         }
