@@ -21,19 +21,25 @@ public class XgFlutterPlugin : FlutterPlugin, MethodCallHandler {
     private var TAG = "| XgpushpPlugin | Flutter | Android | "
 
     constructor() {
-        instance = this
+        if (!isPluginBindingValid()) {
+            instance = this
+        }
     }
 
     constructor(binding: FlutterPlugin.FlutterPluginBinding, methodChannel: MethodChannel) {
-        mPluginBinding = binding
-        channel = methodChannel
-        instance = this
+        if (!isPluginBindingValid()) {
+            mPluginBinding = binding
+            channel = methodChannel
+            instance = this
+        }
     }
 
     constructor(mRegistrar: Registrar, mChannel: MethodChannel) {
-        channel = mChannel
-        registrar = mRegistrar
-        instance = this
+        if (!isPluginBindingValid()) {
+            channel = mChannel
+            registrar = mRegistrar
+            instance = this
+        }
     }
 
     companion object {
@@ -662,10 +668,8 @@ public class XgFlutterPlugin : FlutterPlugin, MethodCallHandler {
 
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-        if (XgFlutterPlugin.channel == null) {
-            val channel1 = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "tpns_flutter_plugin")
-            channel1.setMethodCallHandler(XgFlutterPlugin(flutterPluginBinding, channel1))
-        }
+        val channel1 = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "tpns_flutter_plugin")
+        channel1.setMethodCallHandler(XgFlutterPlugin(flutterPluginBinding, channel1))
     }
 
 
